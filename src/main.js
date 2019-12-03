@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
 import { findTrails } from './trails';
-import { findDistance } from './distance';
+// import { findDistance } from './distance';
 
 $(document).ready(function() {
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
     //     const rows = body.rows;
     //     for (let i in rows){
     //       if (rows[i].length > maxHikeDistance){
-    //         $("#display-results").append(`${rows.elements[i].distance}<br>${rows.elements[i].duration}<p></p>`);
+    //         $("#display-results").append(`${body.origin_addresses}<br>${body.destination_addresses}<br>${rows.elements[i].distance}<br>${rows.elements[i].duration}<p></p>`);
     //       }
     //     }
     //   });

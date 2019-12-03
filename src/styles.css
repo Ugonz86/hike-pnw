@@ -13,14 +13,9 @@
   padding-top: 20px;
 }
 
-.container {
+#container {
   text-align: center;
-  margin-top: 25px;
-}
-
-.jumbotron {
-  /* background-color: #374839; */
-  background-color: rgba(0, 30, 3, 0.68);
+  margin-top: 250px;
 }
 
 html {
@@ -39,8 +34,8 @@ body {
 
 h1 {
   letter-spacing: 8px;
-  color: white;
-  font-size: 400%;
+  color: rgba(0, 30, 3, 0.68);
+  font-size: 500%;
 }
 
 input {
@@ -82,7 +77,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   left: 0;
   bottom: 0;
   text-align: center;
-  color: #96ae71;
+  color: #c1c9bd;
   font-size: 12px;
   letter-spacing: 5px;
   font-weight: lighter;
