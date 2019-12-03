@@ -56,7 +56,7 @@ input {
   color: #544541;
 }
 
-button#searchNearby, button#searchDestination, button#find-trails, button#goHome, button#goHome2, button#directionsButton {
+button#searchNearby, button#searchDestination, button#find-trails, button#goHome, button#goHome2, button#directionsButton, button#map {
   height: 50px;
   width: 250px;
   /* background-color: #374839; */
@@ -68,7 +68,7 @@ button#searchNearby, button#searchDestination, button#find-trails, button#goHome
   font-weight: lighter;
 }
 
-button#searchNearby:hover, button#searchDestination:hover, button#find-trails:hover, button#goHome:hover, button#goHome2:hover, button#directionsButton:hover  {
+button#searchNearby:hover, button#searchDestination:hover, button#find-trails:hover, button#goHome:hover, button#goHome2:hover, button#directionsButton:hover, button#map:hover  {
   background-color: #96ae71;
   border: 0;
   outline: none;

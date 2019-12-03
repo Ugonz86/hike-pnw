@@ -1,6 +1,4 @@
-import { API_KEY } from "./../.env";
-
-
+const API_KEY = process.env.API_KEY;
 
 export function findTrails(){
   return new Promise(function(resolve, reject) {
@@ -21,13 +19,6 @@ export function findTrails(){
     request.send();
   });
 }
-
-
-
-
-
-
-
 
 
 // maxDistance - Max distance, in miles, from lat, lon. Default: 30. Max: 200.

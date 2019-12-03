@@ -2,7 +2,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-import { findTrails } from './scripts';
+import { findTrails, findDistance } from './scripts';
 
 $(document).ready(function() {
 
@@ -38,7 +38,13 @@ $(document).ready(function() {
         $("#display-results").empty().append(`<h5>There was an error processing your request: ${error.message}</h5>`);
         $("#display-div").show();
       });
+
+    findDistance()
+      .then((response) => {
+
+      });
   });
+
   $("#goHome").click(function() {
     $("#resultsDiv").hide();
     $("#intro").slideDown();
@@ -50,6 +56,3 @@ $(document).ready(function() {
     $("#intro").slideDown();
   });
 });
-
-
-// 'https://www.google.com/maps/dir/?api=1&destination=' . $address
