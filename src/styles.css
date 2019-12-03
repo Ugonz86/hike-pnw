@@ -1,0 +1,89 @@
+#hikesNearby, #searchByPlace {
+  display: none;
+}
+
+#resultsDiv {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  color: white;
+  background-color: rgba(0, 30, 3, 0.68);
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.jumbotron {
+  /* background-color: #374839; */
+  background-color: rgba(0, 30, 3, 0.68);
+}
+
+html {
+  height: 100%;
+  background:url(https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2601&q=80) no-repeat center center fixed;
+  background-size: cover;
+  background-color: black;
+  min-height: 100%;
+}
+
+body {
+  /* background-color: #dedede; */
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  letter-spacing: 8px;
+  color: white;
+  font-size: 500%;
+}
+
+input {
+  height: 50px;
+  width: 400px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(191, 205, 178, 0.78);
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  color: #544541;
+}
+
+button#searchNearby, button#searchDestination, button#find-trails, button#goHome, button#goHome2, button#directionsButton {
+  height: 50px;
+  width: 250px;
+  /* background-color: #374839; */
+  background-color: rgba(0, 30, 3, 0.68);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-weight: lighter;
+}
+
+button#searchNearby:hover, button#searchDestination:hover, button#find-trails:hover, button#goHome:hover, button#goHome2:hover, button#directionsButton:hover  {
+  background-color: #96ae71;
+  border: 0;
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #96ae71;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}

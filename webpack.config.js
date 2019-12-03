@@ -18,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Project Title',
+      title: 'maps-api',
       template: './src/index.html',
       inject: 'body'
     })
@@ -39,6 +39,12 @@ module.exports = {
             /spec/
           ],
         loader: "eslint-loader"
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
       }
     ]
   }

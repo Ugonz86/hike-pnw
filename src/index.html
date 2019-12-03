@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <title>HIKE-PNW</title>
+</head>
+<body>
+  <div class="container">
 
-
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Trails API</h1>
-      </div>
-
-
-      <label for="trail-distance">Enter maximum length of hike in miles.</label>
-      <input id="trail-distance" type="text">
-
-      <button id="find-trails" type="button">Find Trails</button>
-
-      <div id="display-results">
-
-      </div>
+    <div class="jumbotron">
+      <h1>HIKE-PNW</h1>
     </div>
 
+    <div class="container" id="intro">
+      <button type="button" id="searchNearby">Search Hikes Nearby</button>
+      <button type="button" id="searchDestination">Search Destination</button>
+    </div>
 
+    <div class="container" id="hikesNearby">
+      <div id="searchBar">
+        <input id="trail-distance" placeholder="Enter minimum length of hike in miles" type="text">
+        <button id="find-trails" type="button">Find Trails</button>
+      </div>
+    </div>
+    <div id="resultsDiv">
+      <div id="display-results">
+      </div>
+      <br>
+      <button type="button" id="goHome">Go Home</button>
+      <br>
+    </div>
+    <br>
 
-  </body>
+    <div class="container" id="searchByPlace">
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+        <input type="text" placeholder="Enter a city or place" name="daddr" />
+        <input type="hidden" name="saddr" value="Current location" /><br><br>
+        <button type="submit" id="directionsButton">Get Directions</button>
+        <button type="button" id="goHome2">Go Home</button>
+      </form>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+      Uriel Gonzalez, Trevor Mackin & Jordan Safford (C) 2019
+    </div>
+  </div>
+</body>
 </html>

@@ -1,4 +1,4 @@
-import { API_KEY } from "./../.env"; 
+import { API_KEY } from "./../.env";
 
 
 
@@ -7,7 +7,7 @@ export function findTrails(){
     let request = new XMLHttpRequest();
 
     const endPoint = "https://www.hikingproject.com/data/get-trails?";
-    let url = `${endPoint}lat=47.6062&lon=-122.3321&maxDistance=100&key=${API_KEY}&maxResults=100&sort=distance`;
+    let url = `${endPoint}lat=47.6062&lon=-122.3321&maxDistance=100&key=${API_KEY}&maxResults=20&sort=distance`;
 
     request.onload = function() {
       if (this.status === 200) {
