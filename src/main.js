@@ -2,7 +2,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-import { findTrails, findDistance } from './scripts';
+import { findTrails } from './trails';
+import { findDistance } from './distance';
 
 $(document).ready(function() {
 
@@ -29,7 +30,7 @@ $(document).ready(function() {
         const body = JSON.parse(response);
         const trails = body.trails;
         for (let i in trails){
-          if (trails[i].length > maxHikeDistance){
+          if (trails[i].length < maxHikeDistance){
             $("#display-results").append(`${trails[i].name}<br>${trails[i].location}<br>${trails[i].length} mile hike<br>lat: ${trails[i].latitude}, lon: ${trails[i].longitude}<p></p>`);
           }
         }
@@ -39,10 +40,20 @@ $(document).ready(function() {
         $("#display-div").show();
       });
 
-    findDistance()
-      .then((response) => {
-
-      });
+    // findDistance()
+    //   .then((response) => {
+    //     $("#display-results").empty();
+    //
+    //     const body = JSON.parse(response);
+    //     const origin_addresses = body.origin_addresses;
+    //     const destination_addresses = body.destination_addresses;
+    //     const rows = body.rows;
+    //     for (let i in rows){
+    //       if (rows[i].length > maxHikeDistance){
+    //         $("#display-results").append(`${rows.elements[i].distance}<br>${rows.elements[i].duration}<p></p>`);
+    //       }
+    //     }
+    //   });
   });
 
   $("#goHome").click(function() {
