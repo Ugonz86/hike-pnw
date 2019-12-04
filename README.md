@@ -1,7 +1,7 @@
 # **Hike PNW**
 ##### _*By Trevor Mackie, Uriel Gonzalez and Jordan Safford 11/22/19*_  
 
-#### A website where a user can search for trails nearby or specific trail destinations and receive a list of trails with the address, description and weather. Data is gathered from hikingproject.com, googlemaps.com and darksky.com APIs.
+#### A website where a user can search for trails nearby or specific trail destinations and receive a list of trails with the address, description and weather. Data is gathered from various databases via APIs.
 
 ## **Specs**
 * _1. A user can ..._
