@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <title>HIKE-PNW</title>
 </head>
@@ -30,7 +31,8 @@
     </div>
 
     <div class="container" id="searchByPlace">
-      <form action="http://maps.google.com/maps" method="get" target="_blank">
+      <!-- action="http://maps.google.com/maps" method="get" target="_blank" -->
+      <form>
         <input type="text" placeholder="Enter a city or place" name="daddr" />
         <input type="hidden" name="saddr" value="Current location" /><br><br>
         <button type="submit" id="directionsButton">Get Directions</button>
@@ -39,6 +41,9 @@
     </div>
     <br>
     <br>
+    <div class="mapDiv">
+      <div id="map_canvas" style="width:500px;height:380px;"></div>
+    </div>
   </div>
   <div class="footer">
     Uriel Gonzalez, Trevor Mackin & Jordan Safford (C) 2019
