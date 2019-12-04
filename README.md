@@ -1,38 +1,57 @@
-# Webpack Template
-##### By Trevor Mackin
-###### Created November 13, 2019
+# **Hike PNW**
+##### _*By Trevor Mackie, Uriel Gonzalez and Jordan Safford 11/22/19*_  
 
-## Description
+#### A website where a user can search for trails nearby or specific trail destinations and receive a list of trails with the address, description and weather. Data is gathered from hikingproject.com, googlemaps.com and darksky.com APIs.
 
-_This is a template for future use in individual projects._
+## **Specs**
+* _1. A user can ..._
 
-## Setup/Installation Requirements:
+## **API Documentation**
 
-1. Open https://ratta2ii.github.io/webpack-template
-2. Clone repository to local machine (or use as template to open new repo)
-3. Optional: Update title in webpack.config.js
-4. Optional: Update name of project in package in package.json
-5. Optional: Add author info, etc...
-6. TESTING: Make sure to add file(s) in __tests__ (Example: file-name.test.js)
-7. $ npm install  (in the command line interface) to install
+* _https://www.hikingproject.com/data_
+* _https://developers.google.com/maps/documentation_
+* _https://darksky.net/dev/docs_
 
-  - $ npm run build -when you are ready to build project
-  - $ npm run test -for testing with (Jest)
-  - $ npm run start -for live server
+## **Setup/Installation Requirements**
 
-## Technologies Used:
+* _Open Command Line_
+* _cd Desktop_
+* _Git Clone https://github.com/Ugonz86/Doctor-Lookup.git_
+* _cd hike-pnw_
+* _touch .env (To create .env file in root directory)_
+* _See API documentaiotn section above to create your API key._
+* _Store API key (s) to .env file. (API_KEY = 'enter api key here')_
+* _atom . (or code .)_
+* _npm install_
+* _npm run build_
+* _npm run start_
 
-* HTML
-* CSS
-* Bootstrap
-* jQuery (Version 3.4.1)
-* JavaScript
-* Jest
-* ESLint
-* npm
-* Webpack
-* Babel
+## **Known Bugs**
 
-### License:
+_No bugs at the moment._
 
-Copyright (c) 2019 **Trevor Mackin**
+## **Github Link**
+* _https://github.com/Ugonz86/hike-pnw.git_
+
+## Support and contact details
+
+* _tismeTRM@gmail.com_
+* _ugonzalez86@gmail.com_
+* _jordansafford@gmail.com_
+
+## **Technologies Used**
+
+* _HTML - for UI layout_
+* _CSS - for UI styling_
+* _Bootstrap - for UI layout and styling_
+* _JavaScript - for backend functionality_
+* _jQuery - To help back end code have effects on UI_
+* _Atom - To write and edit the code_
+* _Chrome inspect - To help debug and see progress_
+* _Postman - To make or test API calls
+* _Hiking Project API, Google Maps API and Dark Sky API - to gather data
+
+## **License**
+
+*MIT License*
+Copyright (c) 2019
