@@ -18,21 +18,22 @@
     <div class="container" id="hikesNearby">
       <div id="searchBar">
         <input id="trail-distance" placeholder="Enter maximum length of hike in miles" type="text">
+        <input type="date" id="dateInput" placeholder="mm/dd/yyyy">
         <button id="find-trails" type="button">Find Trails</button>
       </div>
     </div>
     <div id="resultsDiv">
+      <h3><em>Hikes Nearby</em></h3>
+      <hr>
       <div id="display-results">
       </div>
-      <br>
       <button type="button" id="goHome">Go Home</button>
       <br>
       <br>
     </div>
 
     <div class="container" id="searchByPlace">
-      <!-- action="http://maps.google.com/maps" method="get" target="_blank" -->
-      <form>
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
         <input type="text" placeholder="Enter a city or place" name="daddr" />
         <input type="hidden" name="saddr" value="Current location" /><br><br>
         <button type="submit" id="directionsButton">Get Directions</button>
@@ -41,10 +42,11 @@
     </div>
     <br>
     <br>
-    <div class="mapDiv">
+    <!-- <div class="mapDiv">
       <div id="map_canvas" style="width:500px;height:380px;"></div>
-    </div>
+    </div> -->
   </div>
+  <br>
   <div class="footer">
     Uriel Gonzalez, Trevor Mackin & Jordan Safford (C) 2019
   </div>

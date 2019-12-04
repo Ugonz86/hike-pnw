@@ -1,16 +1,11 @@
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
+const API_KEY = process.env.API_KEY;
 
-
-export function findWeather(coordinates) {
+export function findConditions() {
   return new Promise(function(resolve, reject) {
     let request = new XMLHttpRequest();
 
-
-    let unixTime = "1575468000";
-    let date = "2019-12-04";
-
-    const cors = "https://cors-anywhere.herokuapp.com/";
-    let url = `${cors}https://api.darksky.net/forecast/${WEATHER_API_KEY}/${coordinates},${unixTime}?date=${date}`;
+    const endPoint = "https://www.hikingproject.com/data/get-conditions?ids=&key=${API_KEY}";
+    let url = `${endPoint}ids=${ids}&key=${API_KEY}`;
 
     request.onload = function() {
       if (this.status === 200) {

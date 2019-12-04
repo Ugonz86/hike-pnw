@@ -19,7 +19,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Project Title',
+      title: 'hike-pnw',
       template: './src/index.html',
       inject: 'body'
     }),
