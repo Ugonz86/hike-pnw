@@ -5,8 +5,14 @@ import './styles.css';
 import { findTrails } from './apis/trails';
 import { findWeather } from './apis/weather';
 //import { findCampgrounds } from './apis/camping';
-//import { findDistance } from './apis/distance';
+// import { findDistance } from './apis/distance';
 
+let origins;
+navigator.geolocation.getCurrentPosition(getLocation);
+function getLocation(location) {
+  origins = location.coords.latitude + "," + location.coords.longitude;
+  console.log(origins);
+}
 
 $(document).ready(function() {
   $("#searchNearby").click(function() {
@@ -48,10 +54,10 @@ $(document).ready(function() {
                 let temperature = weatherBody.daily.data[0].temperatureHigh;
                 temperature = parseInt(temperature);
 
-                $("#display-results").append(`${trails[i].name}<br>${trails[i].location}<br>${trails[i].length} mile hike<br>${trails[i].latitude}, ${trails[i].longitude}<br>${weatherSummary}<br>${temperature} degree high<p></p><hr>`);
+                $("#display-results").append(`${trails[i].name}<br>${trails[i].location}<br>${trails[i].length} mile hike<br>${trails[i].latitude}, ${trails[i].longitude}<br>${weatherSummary}<br>${temperature} degree high<br><a href="https://www.google.com/maps/dir/${origins}/${trailCoordinates}">Get Directions</a><p></p><hr>`);
               },
               function(error) {
-                console.error(`I am the error message: ${error.message}`);
+                $("#display-results").append(`I am the error message: ${error.message}`);
               });
           }
         }
