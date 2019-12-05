@@ -5,7 +5,7 @@ export function findDistance(destinations) {
     let request = new XMLHttpRequest();
 
     const endPoint = "https://maps.googleapis.com/maps/api/distancematrix/json?";
-    let url = `${endPoint}key=${MAPS_API_KEY}&origins=&destinations=${destinations}&mode=driving&language=en=EN&sensor=false`;
+    let url = `${endPoint}key=${MAPS_API_KEY}&origins=47.6062,-122.3321&destinations=${destinations}&mode=driving&language=en=EN&sensor=false`;
 
     request.onload = function() {
       if (this.status === 200) {
