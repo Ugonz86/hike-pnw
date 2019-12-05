@@ -26,12 +26,6 @@ h1:hover {
 h3 {
   color: #a18600;
   letter-spacing: 8px;
-  transition: 0.4s;
-}
-
-h3:hover {
-  color: #ffd500;
-  transform: scale(1.2);
 }
 
 hr {
