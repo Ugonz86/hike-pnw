@@ -11,7 +11,6 @@ let origins;
 navigator.geolocation.getCurrentPosition(getLocation);
 function getLocation(location) {
   origins = location.coords.latitude + "," + location.coords.longitude;
-  console.log(origins);
 }
 
 $(document).ready(function() {
@@ -43,8 +42,6 @@ $(document).ready(function() {
           if (trails[i].length < maxHikeDistance){
 
             let trailCoordinates = `${trails[i].latitude},${trails[i].longitude}`;
-
-            /* Dark Sky Weather API. Trail coordinates are used as arguments to find weather for that area. */
 
             findWeather(trailCoordinates, hikingDate)
               .then((response) => {

@@ -1,10 +1,12 @@
 # **Hike PNW**
 ##### _*By Trevor Mackie, Uriel Gonzalez and Jordan Safford 11/22/19*_  
 
-#### A website where a user can search for trails nearby or specific trail destinations and receive a list of trails with the address, description and weather. Data is gathered from various databases via APIs.
+#### A JavaScript with APIs website where a user can search for hiking trails nearby with their respective information. Data is gathered from various databases via APIs.
 
 ## **Specs**
-* _1. A user can ..._
+* _A user can input a distance in miles with a specific date and the program returns a list of 10 nearby hikes with detailed information, weather conditions and a google maps directions link based on user inputted criteria._
+* _If a user cannot find a desired trail in the search hikes nearby list, the user can search for a specific place by inputting the name in the search destination search bar, and get redirected to Google Maps, with the user's current location and destination already gathered.
+
 
 ## **API Documentation**
 
@@ -16,10 +18,10 @@
 
 * _Open Command Line_
 * _cd Desktop_
-* _Git Clone https://github.com/Ugonz86/Doctor-Lookup.git_
+* _Git Clone https://github.com/Ugonz86/hike-pnw.git_
 * _cd hike-pnw_
 * _touch .env (To create .env file in root directory)_
-* _See API documentaiotn section above to create your API key._
+* _See API documentation section above to create your API key._
 * _Store API key (s) to .env file. (API_KEY = 'enter api key here')_
 * _atom . (or code .)_
 * _npm install_
