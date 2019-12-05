@@ -5,7 +5,7 @@
 
 ## **Specs**
 * _A user can input a distance in miles with a specific date and the program returns a list of 10 nearby hikes with detailed information, weather conditions and a google maps directions link based on user inputted criteria._
-* _If a user cannot find a desired trail in the search hikes nearby list, the user can search for a specific place by inputting the name in the search destination search bar, and get redirected to Google Maps, with the user's current location and destination already gathered.
+* _If a user cannot find a desired trail in the search hikes nearby list, the user can search for a specific place by inputting the name in the search destination search bar, and get redirected to Google Maps, with the user's current location and destination already gathered._
 
 
 ## **API Documentation**
