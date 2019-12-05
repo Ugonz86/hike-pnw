@@ -51,7 +51,7 @@ $(document).ready(function() {
                 let temperature = weatherBody.daily.data[0].temperatureHigh;
                 temperature = parseInt(temperature);
 
-                $("#display-results").append(`${trails[i].name}<br>${trails[i].location}<br>${trails[i].length} mile hike<br>${weatherSummary}<br>${temperature} degree high<br><a href="https://www.google.com/maps/dir/${origins}/${trailCoordinates}">Get Directions</a><p></p><hr>`);
+                $("#display-results").append(`<img src="${trails[i].imgSmallMed}"><br><br>${trails[i].name}<br><br>${trails[i].location}<br>${trails[i].length} mile hike<br>${weatherSummary}<br>${temperature} degree high<br>Difficulty: ${trails[i].difficulty}<br><br><a href="https://www.google.com/maps/dir/${origins}/${trailCoordinates}">Get Directions</a><p></p><br><hr>`);
               },
               function(error) {
                 $("#display-results").append(`I am the error message: ${error.message}`);

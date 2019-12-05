@@ -59,6 +59,18 @@ input[type="date"]::-webkit-inner-spin-button {
     display: none;
 }
 
+img {
+  border-radius: 5px;
+  float: left;
+  width: 300px;
+  height: 300px;
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
 button#searchNearby, button#searchDestination, button#find-trails, button#goHome, button#goHome2, button#directionsButton, button#map {
   height: 50px;
   width: 250px;
@@ -110,7 +122,9 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   background-color: rgba(0, 30, 3, 0.68);
   border-radius: 5px;
   padding-top: 30px;
-  height: 550px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 600px;
   overflow-y: scroll;
 }
 
@@ -128,6 +142,11 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   background-color: rgba(0, 30, 3, 0.38);
   outline: 1px solid rgba(0, 30, 3, 0.68);
   border-radius: 5px;
+}
+
+#display-results {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #container {
