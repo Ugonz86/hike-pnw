@@ -15,11 +15,23 @@ h1 {
   letter-spacing: 8px;
   color: rgba(0, 30, 3, 0.68);
   font-size: 500%;
+  transition: 0.4s;
+}
+
+h1:hover {
+  color: #a18600;
+  transform: scale(1.2);
 }
 
 h3 {
   color: #a18600;
   letter-spacing: 8px;
+  transition: 0.4s;
+}
+
+h3:hover {
+  color: #ffd500;
+  transform: scale(1.2);
 }
 
 hr {
@@ -62,12 +74,14 @@ button#searchNearby, button#searchDestination, button#find-trails, button#goHome
   border-radius: 5px;
   outline: none;
   font-weight: lighter;
+  transition: 0.4s;
 }
 
 button#searchNearby:hover, button#searchDestination:hover, button#find-trails:hover, button#goHome:hover, button#goHome2:hover, button#directionsButton:hover, button#map:hover  {
   background-color: #a18600;
   border: 0;
   outline: none;
+  transform: scale(.8);
 }
 
 .footer {
@@ -82,6 +96,11 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   font-size: 12px;
   letter-spacing: 5px;
   font-weight: lighter;
+  transition: 0.4s;
+}
+
+.footer:hover {
+  color: white;
 }
 
 #hikesNearby, #searchByPlace {
@@ -97,7 +116,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   background-color: rgba(0, 30, 3, 0.68);
   border-radius: 5px;
   padding-top: 30px;
-  height: 600px;
+  height: 550px;
   overflow-y: scroll;
 }
 
@@ -119,7 +138,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
 
 #container {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 #dateInput {
