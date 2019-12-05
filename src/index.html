@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <title>HIKE-PNW</title>
 </head>
 <body>
+  <button class="btn" id="homeButton"><i class="fa fa-home"></i></button>
   <div id="container">
     <h1>HIKE-PNW</h1>
     <div class="container" id="intro">
       <button type="button" id="searchNearby">Search Hikes Nearby</button>
-      <button type="button" id="searchDestination">Search Destination</button>
+      <button type="button" id="searchCampgrounds">Search Campgrounds</button>
+      <button type="button" id="searchDestination">Search Places By Name</button>
     </div>
     <div class="container" id="hikesNearby">
       <div id="searchBar">
@@ -23,24 +27,31 @@
       <hr>
       <div id="display-results">
       </div>
-      <button type="button" id="goHome">Go Home</button>
-      <br>
-      <br>
+
     </div>
     <div class="container" id="searchByPlace">
       <form action="http://maps.google.com/maps" method="get" target="_blank">
         <input type="text" placeholder="Enter a city or place" name="daddr" />
         <input type="hidden" name="saddr" value="Current location" /><br><br>
         <button type="submit" id="directionsButton">Get Directions</button>
-        <button type="button" id="goHome2">Go Home</button>
       </form>
     </div>
-    <br>
-    <br>
-    <div class="container" id="featuredDiv">
-      <div id="display-featured">
+
+    <div class="container" id="campgroundsNearby">
+      <div id="searchBar2">
+        <input id="campground-distance2" placeholder="Enter maximum length of hike in miles" type="text">
+        <input type="date" id="dateInput" placeholder="mm/dd/yyyy">
+        <button id="find-campgrounds" type="button">Find Campgrounds</button>
       </div>
     </div>
+    <div id="resultsDiv2">
+      <h3>Campgrounds Nearby</h3>
+      <hr>
+      <div id="display-results2">
+      </div>
+    </div>
+    <!-- <br>
+    <button type="button" id="goHome">Go Home</button> -->
   </div>
   <br>
   <div class="footer">
