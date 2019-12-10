@@ -13,7 +13,9 @@ body {
 
 h1 {
   letter-spacing: 6px;
-  color: rgba(0, 30, 3, 0.68);
+  color: #21100b;
+  opacity: 80%;
+  /* color: rgba(0, 30, 3, 0.68); */
   font-size: 600%;
   text-align: center;
 }
@@ -37,7 +39,7 @@ a {
   padding-right: 6px;
   text-decoration: none;
   margin-bottom: 25px;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.4s;
 }
 
@@ -135,6 +137,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   padding-right: 30px;
   height: 600px;
   overflow-y: scroll;
+  text-align: left;
 }
 
 #resultsDiv::-webkit-scrollbar, #resultsDiv2::-webkit-scrollbar {
