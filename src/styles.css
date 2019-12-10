@@ -114,7 +114,6 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   letter-spacing: 5px;
   font-weight: lighter;
   transition: 0.4s;
-
   clear: both;
 }
 
@@ -124,6 +123,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
 
 #hikesNearby, #searchByPlace, #campgroundsNearby {
   display: none;
+  margin-bottom: 420px;
 }
 
 #resultsDiv, #resultsDiv2 {
@@ -167,6 +167,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
 
 #intro, #searchBar, #searchByPlace {
   text-align: center;
+  margin-bottom: 420px;
 }
 
 #display-results, #display-results2 {
