@@ -13,7 +13,7 @@ navigator.geolocation.getCurrentPosition(getLocation);
 function getLocation(location) {
   origins = location.coords.latitude + "," + location.coords.longitude;
   lat = location.coords.latitude;
-  lon = location.coords.latitude;
+  lon = location.coords.longitude;
 }
 
 $(document).ready(function() {
@@ -84,13 +84,12 @@ $(document).ready(function() {
         $("#display-results2").empty();
         const body = JSON.parse(response);
         const campgrounds = body.campgrounds;
-        console.log(campgrounds);
+
         for (let i in campgrounds){
           if (campgrounds[i].length < maxCampDistance){
 
-            let campgroundCoordinates = `${campgrounds[i].latitude},${campgrounds[i].longitude}`;
+            $("#display-results2").append(`${campgrounds[i].name}<br>Bookable Campground: ${campgrounds[i].isBookable}<br>Campsites: ${campgrounds[i].numCampsites}<br>${campgrounds[i].location}<br>${lat},${lon}<p></p><br><hr>`);
 
-            $("#display-results2").append(`${campgrounds[i].name}<br>Bookable Campground: ${campgrounds[i].isBookable}<br>Campsites: ${campgrounds[i].numCampsites}<br>${campgrounds[i].location}<br>${lat},${lon}<br><a href="https://www.google.com/maps/dir/${origins}/${campgroundCoordinates}">Get Directions</a><p></p><br><hr>`);
           }
         }
       },
