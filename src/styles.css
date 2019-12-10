@@ -102,7 +102,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   background-color: transparent;
   height: 50px;
   width: 100%;
@@ -114,6 +114,8 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   letter-spacing: 5px;
   font-weight: lighter;
   transition: 0.4s;
+
+  clear: both;
 }
 
 .footer:hover {
@@ -138,6 +140,7 @@ button#searchNearby:hover, button#searchDestination:hover, button#find-trails:ho
   height: 600px;
   overflow-y: scroll;
   text-align: left;
+  overflow: auto;
 }
 
 #resultsDiv::-webkit-scrollbar, #resultsDiv2::-webkit-scrollbar {

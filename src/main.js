@@ -38,6 +38,7 @@ $(document).ready(function() {
     let hikingDate = $('input#dateInput').val();
     $("input#dateInput").val("");
 
+
     findTrails()
       .then((response) => {
 
@@ -80,16 +81,14 @@ $(document).ready(function() {
 
     findCampgrounds(lat, lon)
       .then((response) => {
-
         $("#display-results2").empty();
         const body = JSON.parse(response);
         const campgrounds = body.campgrounds;
 
+        console.log(response);
         for (let i in campgrounds){
           if (campgrounds[i].length < maxCampDistance){
-
             $("#display-results2").append(`${campgrounds[i].name}<br>Bookable Campground: ${campgrounds[i].isBookable}<br>Campsites: ${campgrounds[i].numCampsites}<br>${campgrounds[i].location}<br>${lat},${lon}<p></p><br><hr>`);
-
           }
         }
       },
